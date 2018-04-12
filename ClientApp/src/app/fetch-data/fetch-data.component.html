@@ -31,7 +31,7 @@
           <div class="card-body">
               <h5 class="card-title"><a>{{ item.title }}</a></h5>
               <p class="card-text" [innerHTML]="item.description"></p>
-              <a :href="item.url" class="btn btn-primary">Leer</a>
+              <a [attr.href]="item.url" class="btn btn-primary">Leer</a>
           </div>
           <div class="card-footer text-muted text-right">
                   {{formatDate(item.published)}}
