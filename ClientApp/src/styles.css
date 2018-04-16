@@ -8,3 +8,26 @@ img{
 .feedflare{
     display: none;
 }
+
+.mobile-nav {
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    content: '';
+    left: auto;
+    width: 260px;
+    right: -100%;
+    position: fixed;
+    transition: right 0.25s ease-in-out;
+    z-index: 10;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}

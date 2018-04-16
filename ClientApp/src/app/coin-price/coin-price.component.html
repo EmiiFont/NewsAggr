@@ -1,14 +1,17 @@
 <div>
-  <h1>Precios de monedas</h1>
-    <table class="table table-sm table-bordered">
+<h4>Precios de monedas</h4>
+  
+<div class="col-sm">
+    <table class="table">
        <thead>
        </thead>
        <tbody *ngFor="let coin of coins">
          <tr>
-           <td>{{coin.symbol}}</td>
+           <td style="color: white">{{coin.symbol}}</td>
            <td *ngIf="coin.percent_change_1h > 0" style="color: green">US{{ moneyFormat(coin.price_usd)}}</td>
            <td *ngIf="coin.percent_change_1h < 0" style="color: red">US{{ moneyFormat(coin.price_usd)}}</td>
          </tr>
        </tbody>
      </table>
+    </div>
 </div>
